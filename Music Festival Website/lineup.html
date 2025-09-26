@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineup - SoundWave Festival 2025</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="musicwebiste.html">SoundWave Festival</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="musicwebiste.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="lineup.html">Lineup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tickets.html">Tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Lineup Grid -->
+    <section class="lineup-grid mt-5 pt-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Festival Lineup</h2>
+            <div class="row">
+                <!-- Artist Cards -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="artist-card" data-artist="1">
+                        <div style="height: 200px; background-color: #FF6B6B;" class="d-flex align-items-center justify-content-center">
+                            <h3 class="text-white">Electronic Dreams</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5>Electronic Dreams</h5>
+                            <p>Main Stage - 10:00 PM</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#artistModal1">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="artist-card" data-artist="2">
+                        <div style="height: 200px; background-color: #4ECDC4;" class="d-flex align-items-center justify-content-center">
+                            <h3 class="text-white">Rock Revolution</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5>Rock Revolution</h5>
+                            <p>Main Stage - 8:00 PM</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#artistModal2">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="artist-card" data-artist="3">
+                        <div style="height: 200px; background-color: #45B7D1;" class="d-flex align-items-center justify-content-center">
+                            <h3 class="text-white">Pop Sensation</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5>Pop Sensation</h5>
+                            <p>Second Stage - 9:00 PM</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#artistModal3">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="artist-card" data-artist="4">
+                        <div style="height: 200px; background-color: #96CEB4;" class="d-flex align-items-center justify-content-center">
+                            <h3 class="text-white">Indie Vibes</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5>Indie Vibes</h5>
+                            <p>Second Stage - 7:00 PM</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#artistModal4">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="artist-card" data-artist="5">
+                        <div style="height: 200px; background-color: #FF9999;" class="d-flex align-items-center justify-content-center">
+                            <h3 class="text-white">Global Beats</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5>Global Beats</h5>
+                            <p>Main Stage - 11:00 PM</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#artistModal5">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="artist-card" data-artist="6">
+                        <div style="height: 200px; background-color: #88D8B0;" class="d-flex align-items-center justify-content-center">
+                            <h3 class="text-white">Alternative Scene</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5>Alternative Scene</h5>
+                            <p>Second Stage - 10:00 PM</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#artistModal6">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artist Modals -->
+    <div class="modal fade artist-modal" id="artistModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Electronic Dreams</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 300px; background-color: #FF6B6B;" class="artist-bio-img mb-4 d-flex align-items-center justify-content-center">
+                        <h2 class="text-white">Electronic Dreams</h2>
+                    </div>
+                    <h4>About the Artist</h4>
+                    <p>Electronic Dreams has been revolutionizing the electronic music scene since 2015. With their unique blend of synthesizer melodies and pulsating beats, they've become one of the most sought-after acts in the industry.</p>
+                    <h4>Discography</h4>
+                    <ul>
+                        <li>Digital Horizons (2023)</li>
+                        <li>Synthetic Dreams (2021)</li>
+                        <li>Electric Soul (2019)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade artist-modal" id="artistModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rock Revolution</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 300px; background-color: #4ECDC4;" class="artist-bio-img mb-4 d-flex align-items-center justify-content-center">
+                        <h2 class="text-white">Rock Revolution</h2>
+                    </div>
+                    <h4>About the Artist</h4>
+                    <p>Rock Revolution brings raw energy and classic rock vibes to the modern era. Their explosive performances and guitar-driven anthems have earned them a dedicated following worldwide.</p>
+                    <h4>Discography</h4>
+                    <ul>
+                        <li>Revolution Rising (2024)</li>
+                        <li>Guitar Gods (2022)</li>
+                        <li>Rock Anthem (2020)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade artist-modal" id="artistModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pop Sensation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 300px; background-color: #45B7D1;" class="artist-bio-img mb-4 d-flex align-items-center justify-content-center">
+                        <h2 class="text-white">Pop Sensation</h2>
+                    </div>
+                    <h4>About the Artist</h4>
+                    <p>Pop Sensation is known for their catchy hooks and dynamic performances. Their music combines modern pop with elements of R&B and dance music.</p>
+                    <h4>Top Hits</h4>
+                    <ul>
+                        <li>Dancing in the Rain (2024)</li>
+                        <li>Love Tonight (2023)</li>
+                        <li>Pop Paradise (2022)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@soundwavefestival.com<br>
+                    Phone: (555) 123-4567</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="musicwebiste.html" class="text-white">Home</a></li>
+                        <li><a href="lineup.html" class="text-white">Lineup</a></li>
+                        <li><a href="schedule.html" class="text-white">Schedule</a></li>
+                        <li><a href="tickets.html" class="text-white">Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <small>&copy; 2025 SoundWave Festival. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Animation for artist cards
+            $('.artist-card').hover(
+                function() {
+                    $(this).addClass('shadow-lg');
+                },
+                function() {
+                    $(this).removeClass('shadow-lg');
+                }
+            );
+        });
+    </script>
+</body>
+</html>

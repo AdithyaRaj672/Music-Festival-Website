@@ -1,0 +1,140 @@
+/* Global Styles */
+:root {
+    --primary-color: #ff4081;
+    --secondary-color: #3f51b5;
+    --dark-color: #212121;
+    --light-color: #f5f5f5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-image: url('../images/bg2image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Add overlay to make content more readable */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    backdrop-filter: blur(5px);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+/* Lineup Grid */
+.lineup-grid {
+    padding: 4rem 0;
+}
+
+.artist-card {
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-5px);
+}
+
+.artist-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Schedule */
+.schedule-section {
+    padding: 4rem 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.schedule-day {
+    margin-bottom: 3rem;
+}
+
+/* Add background to sections for better readability */
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+/* Exception for hero section */
+.hero {
+    background-color: transparent;
+    margin: 0;
+    border-radius: 0;
+}
+
+/* Artist Modal */
+.artist-modal .modal-content {
+    border-radius: 15px;
+}
+
+.artist-modal .modal-header {
+    border-bottom: none;
+}
+
+.artist-bio-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Tickets Section */
+.tickets-section {
+    padding: 4rem 0;
+}
+
+.ticket-card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.ticket-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .artist-card img {
+        height: 250px;
+    }
+}
